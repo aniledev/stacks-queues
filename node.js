@@ -27,4 +27,13 @@ class Stack {
     const node = new _Node(data, this.top);
     this.top = node;
   }
+
+  pop() {
+    /* In order to remove the top of the stack, you have to point
+       the pointer to the next item and that next item becomes the
+       top of the stack */
+    const node = this.top;
+    this.top = node.next;
+    return node.data;
+  }
 }
