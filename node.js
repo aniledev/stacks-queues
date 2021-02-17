@@ -6,4 +6,8 @@ class _Node {
   }
 }
 
-module.exports = _Node;
+// create the constructor for the stack with a empty first node
+class Stack {
+    constructor() {
+        this.top = null;
+    }
