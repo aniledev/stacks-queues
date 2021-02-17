@@ -5,3 +5,10 @@ class _Node {
         this.next = null;
     }
 }
+
+// creates an empty queue 
+class Queue {
+    constructor() {
+        this.first = null;
+        this.last = null;
+    }
